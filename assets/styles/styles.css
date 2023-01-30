@@ -90,16 +90,16 @@ main {/* Contenedor de la parte principal */
     margin: 2em 0 0 0;
 }
 
-main>section>article{/* Contenedor de artículo */
+main>article{/* Contenedor de artículo */
     margin: 1em 1em 2em 0;
 }
 
-main>section>article>h3{/* Título de artículo */
+main>article>h3{/* Título de artículo */
     font-size: 2em;
     font-style: italic;
 }
 
-main>section>article>p,main>div>p{/* Texto de artículo */
+main>article>p,main>div>p{/* Texto de artículo */
     font-size: 1.5em;
     word-wrap: break-word;
     max-width: 57vw;
