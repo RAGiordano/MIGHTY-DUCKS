@@ -4,26 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/images/Logo_Mighty_ducks-01.png">
+    <link rel="shortcut icon" href="./assets/images/Logo_Mighty__small.png">
     <title>Mighty Ducks Hockey League</title>
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <!-- <link rel="stylesheet" href="./assets/styles/styles2.css"> -->
+    <!-- <link rel="stylesheet" href="./assets/styles/styles3.css"> -->
 </head>
 <body>
     <header>
-        <figure><img src="./assets/images/Logo_Mighty_ducks-01.png" alt="Miguty Ducks Logo" width="200"></figure>
-        <h1>Mighty Ducks Hockey League</h1>
-
+        <div id="title_container"><h1>Mighty Ducks Hockey League</h1></div>
+        <div id="subtitle_container">
+            <h2 class="about_h2">About MDHL</h2>
+            <figure><img src="./assets/images/Logo_Mighty_ducks-01.png" alt="Miguty Ducks Logo" ></figure>
+        </div>
     </header>
 
     <nav>
-        <a href="./">Home</a><span> | </span>
-        <a href="./about.html">About MDHL</a><span> | </span>
-        <a href="./contact.html">Contact</a>
+        <a class="other_page" href="./">Home</a>
+        <a class="actual_page"href="./about.html">About MDHL</a>
+        <a class="other_page"href="./contact.html">Contact</a>
     </nav>
 
     <main>
         <section>
-            <figure><img src="./assets/images/hockey_2.jpg" alt="Hockey image 2" width="400"></figure>
-            <h2>Upcoming Events</h2>
             <article>
                 <h3>Mision</h3>
                 <p>To support young athletes living Chicago's northside neighborhood, who have an interest in

@@ -1,0 +1,115 @@
+* {/* General */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-width: 0.06em;
+    font-family:"Comic Sans MS";
+}
+
+/* Header */
+#title_container {/* Div contenedor de título H1 e imagen */
+    display:block;
+    height: 50vw;
+    max-height: 400px;
+    width: 100%;
+    background-image: url("../images/design1_image1.jpg");
+    background-size:cover;
+    background-position: 30%;
+    position: relative;
+}
+
+#title_container>h1{/* Título H1 */
+    font-size:5em;
+    color: black;
+    -webkit-text-stroke:0.01vw #b00f;
+    position:absolute;
+    top: 2vw;
+    left:5vw;
+}
+
+#subtitle_container{/* Contenedor del subtítulo H2 */
+    margin: 0.3em 0 1.5em 0;
+    background-color: black;
+    width: 100%;
+    height: 4em;
+    position: relative;
+}
+
+#subtitle_container>h2{/* Subtítulo H2 */
+    -webkit-text-stroke:0.01vw #000f;
+    font-size: 2.5em;
+    position: absolute;
+    color: #ffff;
+    width: 100%;
+    text-align: center;
+    margin: 0.1em 0 0 0;
+}
+
+#subtitle_container>figure {/* Contenedor del logo */
+    position: absolute;
+    width: 14vw;
+    max-width: 170px;
+    min-width: 80px;
+    background-color: #ffff;
+    top: 50%;
+    transform: translateY(-50%);
+    border-style: solid;
+    right:5vw;
+}
+
+#subtitle_container>figure>img{/* Logo */
+    width: 100%;
+}
+
+nav {/* Barra de navegación */
+    display: inline-block;
+    width: 30vw;
+    max-width: 300px;
+    min-width: 12.1em;
+    vertical-align: top;
+}
+
+nav>a {/* Anchor de la barra de navegación */
+    display: block;
+    font-size: 1.5em;
+    margin: 1.5em 1em 3em 1em;
+}
+
+nav>a.other_page{/* Anchor de otras secciones */
+    text-decoration: underline;
+    color: rgb(84,125,201);
+}
+
+nav>a.actual_page {/* Anchor de la sección actual (destacado) */
+    text-decoration: none;
+    color: black;
+}
+
+main {/* Contenedor de la parte principal */
+    display: inline-block;
+    margin: 2em 0 0 0;
+}
+
+main>section>article{/* Contenedor de artículo */
+    margin: 1em 1em 2em 0;
+}
+
+main>section>article>h3{/* Título de artículo */
+    font-size: 2em;
+    font-style: italic;
+}
+
+main>section>article>p,main>div>p{/* Texto de artículo */
+    font-size: 1.5em;
+    word-wrap: break-word;
+    max-width: 57vw;
+    text-indent: 1.5em;
+    margin: 0 0 1em 0;
+}
+
+
+
+main>div>p>a {
+    color: rgb(84,125,201);
+    text-decoration-color: black;
+}

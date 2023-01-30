@@ -1,0 +1,119 @@
+* {/* General */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-width: 0.1em;
+    font-family:"Comic Sans MS";
+}
+
+/* Header */
+#title_container {/* Div contenedor de título H1 e imagen */
+    margin: 7em 0 0 0;
+    display:block;
+    height: 50vw;
+    max-height: 400px;
+    width: 100%;
+    background-image: url("../images/design1_image2.jpg");
+    background-size:cover;
+    background-position:center;
+    position: relative;
+}
+
+#title_container>h1{/* Título H1 */
+    margin: -1.7em 0 0 0;
+    font-size:4em;
+    font-style: italic;
+    position:absolute;
+    left:1vw;
+}
+
+#subtitle_container{/* Contenedor del subtítulo H2 */
+    border-style: solid;
+    width: 100%;
+    height: 4em;
+    position: relative;
+}
+
+#subtitle_container>h2{/* Subtítulo H2 */
+    font-size: 2.5em;
+    position:absolute;
+    top: 5%;
+    width: 100%;
+    text-align: center;
+}
+
+#subtitle_container>figure {/* Contenedor del logo */
+    width: 15vw;
+    max-width: 190px;
+    min-width: 170px;
+    position: absolute;
+    top: 6em;
+    background-color: #ffff;
+    margin-left: auto;
+    margin-right:auto;
+    left:2em;
+}
+
+#subtitle_container>figure>img{/* Logo */
+    width: 100%;
+}
+
+
+body {
+    position:relative; /* Para poder posicionar la barra de navegación */
+}
+
+nav {/* Barra de navegación */
+    position: absolute;
+    top: -2em;
+    right: 3em;
+}
+
+nav>a {/* Anchor de la barra de navegación */
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2em;
+    margin: 0 0.6em;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.09em;
+    box-shadow: 0.15em 0.15em 0px 0px rgb(153,153,153);
+    padding: 0.1em 0.5em;
+}
+
+nav>a.other_page{/* Anchor de otras secciones */
+    color: #ffff;
+    background-color:rgb(68, 113,196);
+}
+
+nav>a.actual_page {/* Anchor de la sección actual (destacado) */
+    color: #ffff;
+    background-color:rgb(111,172,70);
+}
+
+main {/* Contenedor de la parte principal */
+    display: inline-block;
+    margin: 2em 0 0 16em;
+}
+
+main>section>article{/* Contenedor de artículo */
+    margin: 1em 1em 2em 0;
+}
+
+main>section>article>h3{/* Título de artículo */
+    font-size: 2em;
+    font-style: italic;
+}
+
+main>section>article>p,main>div>p{/* Texto de artículo */
+    font-size: 1.5em;
+    word-wrap: break-word;
+    max-width: 57vw;
+    text-indent: 1.5em;
+    margin: 0 0 0.9em 0;
+}
+
+main>div>p>a {
+    color: rgb(84,125,201);
+    text-decoration-color: black;
+}
