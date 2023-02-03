@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     border-width: 0.06em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* HEADER */
@@ -112,17 +113,151 @@ main {/* Contenedor de la parte principal */
     margin: 2em 0 0 0;
 }
 
-main>article{/* Contenedor de artículo */
-    margin: 1em 1em 2em 0;
+
+
+/* SECCIÓN RULES OF PLAY & POLICIES */
+#rules_main{ /* Sección Rules of Play & Policies */
+    position: absolute;
 }
 
-main>article>h3{/* Título de artículo */
+#rules_main>h2{/* Título */
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+#rules_main>p { /* Párrafo que sigue al título */
+    font-size: 1.5em;
+    margin: 1em 0 2.5em 0;
+    text-align: center;
+}
+
+
+#rules_main>ul>li {/* Ítem de lista Rules */
+    list-style-type: none;
+    margin: 0 0 3em 0;
+}
+
+#rules_main>ul>li>h3 {/* Título de Ítem de la lista Rules */
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2em;
+    margin: 0 0 1em 0;
+}
+
+#rules_main>ul>li>p {/* Párrafo de Ítem de la lista Rules */
+    font-size: 1.5em;
+    text-indent: 1.5em;  
+}
+
+#rules_main>ul>li>ul{/* Lista de subítems con círculos*/
+    font-size: 1.5em;
+    margin: 0 0 0 2em;
+}
+
+#rules_main>ul>li>ol>li{/* Lista de subítems con números - BOLD*/
+    font-size: 1.5em;
+    list-style-position: inside;
+    font-weight: bold;
+    margin: 1em 0 1em 0;
+}
+
+#rules_main>ul>li>ol>li>span{/* Lista de subítems con números - SPAN*/
+    font-weight:normal;
+}
+
+#rules_main>ul>li>ol>li>ol{/* Lista de sub-subítems con letras*/
+    list-style-type:lower-latin;
+    list-style-position: inside;
+    font-weight:normal;
+}
+
+
+/* SECCIÓN GAME INFORMATION */
+#game_info_main{ /* Sección Game Information */
+    position: absolute;
+}
+
+#game_info_main>h2{/* Título de Game Information*/
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+#game_info_main .italics{ /* Subtítulo de Game Information */
+    font-style:italic;
+    font-size: 1.4em;
+    margin: 1em 0 0.3em 0;
+}
+
+#game_info_main .underlined_italics{ /* Aclaración de subtítulo de Game Information */
+    font-style:italic;
+    text-decoration-line: underline;
+    font-size: 1.1em;
+    margin: 0 0 2em 0;
+}
+
+table { /* Tabla de Game Information */
+    font-size: 1.3em;
+    text-align: left;
+}
+
+
+tbody td:first-child {
+    width: 10em;
+  }
+  table td:nth-child(2) {
+    width: 20em;
+  }
+  table td:nth-child(3) {
+    width: 20em;
+  }
+  table td:last-child {
+    width: 20em;  
+  }
+
+.indented_2{
+    text-align: center;
+}
+  
+.game_aditional_information>:nth-child(1){
+    margin: 1em 0 0 0;
+    text-indent: initial;
+    font-size: 1.3em;
+}
+
+.game_aditional_information>:nth-child(2){
+    margin: 1em 0 0 0;
+    text-indent: initial;
+    font-size: 1.3em;
+}
+
+.game_aditional_information>:nth-child(3){
+    margin: 3em 0 1em 0;
+    text-indent: initial;
+    font-size: 1.3em;
+}
+
+.flex {
+    display: flex;
+    text-indent: initial;
+    font-size: 1.3em;
+    justify-content: space-between;
+}
+
+
+
+
+article{/* Contenedor de artículo */
+    margin: 1em 1em 2em 0;
+    text-align:start;
+}
+
+article>h3{/* Título de artículo */
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 2em;
 }
 
-main>article>p,main>div>p{/* Texto de artículo */
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+article>p,main>div>p{/* Texto de artículo */
     font-size: 1.5em;
     word-wrap: break-word;
     max-width: 57vw;
