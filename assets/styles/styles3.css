@@ -202,42 +202,46 @@ table { /* Tabla de Game Information */
 }
 
 
-tbody td:first-child {
+tbody td:first-child {/* Para dar ancho de primera columna */
     width: 10em;
-  }
-  table td:nth-child(2) {
-    width: 20em;
-  }
-  table td:nth-child(3) {
-    width: 20em;
-  }
-  table td:last-child {
-    width: 20em;  
-  }
+}
 
-.indented_2{
+table td:nth-child(2) {/* Para dar ancho de segunda columna */
+    width: 20em;
+}
+
+table td:nth-child(3) {/* Para dar ancho de tercera columna */
+    width: 20em;
+}
+
+table td:last-child {/* Para dar ancho de última columna */
+    width: 20em;
+}
+
+
+.indented_2{/* Para centrar el mes */
     text-align: center;
 }
   
-.game_aditional_information>:nth-child(1){
+.game_aditional_information>:nth-child(1){/* Formato párrafos con información adicional */
+    margin: 3em 0 0 0;
+    text-indent: initial;
+    font-size: 1.3em;
+}
+
+.game_aditional_information>:nth-child(2){/* Formato párrafos con información adicional */
     margin: 1em 0 0 0;
     text-indent: initial;
     font-size: 1.3em;
 }
 
-.game_aditional_information>:nth-child(2){
-    margin: 1em 0 0 0;
-    text-indent: initial;
-    font-size: 1.3em;
-}
-
-.game_aditional_information>:nth-child(3){
+.game_aditional_information>:nth-child(3){/* Formato párrafos con información adicional */
     margin: 3em 0 1em 0;
     text-indent: initial;
     font-size: 1.3em;
-}
+} 
 
-.flex {
+.flex {/* Formato párrafos con información adicional */
     display: flex;
     text-indent: initial;
     font-size: 1.3em;
