@@ -293,9 +293,10 @@ table td:last-child {/* Para dar ancho de última columna */
     width: 100%;
 }
 
-.radio_block {
-    margin: 0 0 0 4em;
+.indented_3{/* Para centrar el mes */
+    margin: 0 0 0 3em;
 }
+
 
 .radio_inline>input{
     margin: 0 0 0 2em;

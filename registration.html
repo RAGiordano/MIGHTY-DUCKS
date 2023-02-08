@@ -37,24 +37,19 @@
                 <label>City: <input type="text" id="city" name="city" size="20" required><br><br></label>
                 <label>Zip Code: <input type="text" id="zip_code" name="zip_code" size="8" required><br><br></label>
                 <label>Birth Date: <input type="date" id="birth_date" name="birth_date" required><br><br></label>
-                <label>
-                    <div class="radio_inline">Gender:
-                        <input type="radio" id="male" name="gender" value="male" required> Male
-                        <input type="radio" id="female" name="gender" value="female"> Female
-                    </div> 
-                </label><br>
-                <label>Grade:<br>
-                    <div class="radio_block">
-                        <input type="radio" id="pre_school" name="grade" value="pre_school"> Pre-School<br>
-                        <input type="radio" id="1st" name="grade" value="1st" required> 1st<br>
-                        <input type="radio" id="2nd" name="grade" value="2nd"> 2nd<br>
-                        <input type="radio" id="3rd" name="grade" value="3rd"> 3rd<br>
-                        <input type="radio" id="4th" name="grade" value="4th"> 4th<br>
-                        <input type="radio" id="5th" name="grade" value="1st"> 5th<br>
-                    </div>
-                </label><br>
+                <label class="radio_inline">Gender:<input type="radio" id="male" name="gender" value="male" required> Male</label>
+                <label class="radio_inline"><input type="radio" id="female" name="gender" value="female"> Female</label>
+                <br><br>Grade:<br>
+                <label><input class="indented_3" type="radio" id="pre_school" name="grade" value="pre_school"> Pre-School<br></label>
+                <label><input class="indented_3" type="radio" id="1st" name="grade" value="1st" required> 1st<br></label>
+                <label><input class="indented_3" type="radio" id="2nd" name="grade" value="2nd"> 2nd<br></label>
+                <label><input class="indented_3" type="radio" id="3rd" name="grade" value="3rd"> 3rd<br></label>
+                <label><input class="indented_3" type="radio" id="4th" name="grade" value="4th"> 4th<br></label>
+                <label><input class="indented_3" type="radio" id="5th" name="grade" value="1st"> 5th<br></label>
+                
+                
     
-                <h3>Which elementary school do you live near?</h3><br>
+                <br><h3>Which elementary school do you live near?</h3><br>
                 <label>
                     <select name="school_select" id="school_select" required>
                         <option value="">Select an option</option>
@@ -68,19 +63,13 @@
                 </label><br><br>
                 
                 <h3>What position(s) do you normally play? (check all that apply)</h3><br>
+                <label class="radio_inline"><input type="checkbox" id="forward" name="position" value="forward"> Forward</label>
+                <label class="radio_inline"><input type="checkbox" id="midfield" name="position" value="midfield"> Midfield</label>
+                <label class="radio_inline"><input type="checkbox" id="defense" name="position" value="defense"> Defense</label>
+                <label class="radio_inline"><input type="checkbox" id="goalkeeper" name="position" value="goalkeeper"> Goalkeeper</label>
+            
+                <br><br><h3>Uniform Size:</h3><br>
                 <label>
-                    <div class="radio_inline">
-                        <input type="checkbox" id="forward" name="position" value="forward"> Forward
-                        <input type="checkbox" id="midfield" name="position" value="midfield"> Midfield
-                        <input type="checkbox" id="defense" name="position" value="defense"> Defense
-                        <input type="checkbox" id="goalkeeper" name="position" value="goalkeeper"> Goalkeeper
-                    </div>
-                    
-                </label><br><br>
-    
-                
-                
-                <label><h3>Uniform Size:</h3><br>
                     <select name="uniform_size" id="uniform_size_select" required>
                         <option value="">Select an option</option>
                         <option value="youth_small">Youth Small</option>
